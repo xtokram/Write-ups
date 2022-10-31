@@ -9,7 +9,7 @@ Matheus Almeida   - github.com/xtokram      - linkedin.com/in/tokram     <br>
 Rafael Menezes    - github.com/rmmenezes    - linkedin.com/in/rmmenezes  <br>
 
 
-## 📋 Material recomendado para estudos sobre Segurança Cibernética <br>
+### 📋 Material recomendado para estudos sobre Segurança Cibernética <br>
 ### 🔧 Repositório será atualizado com frequência, para sugestões ou solicitações entrar em contato nos links acima.
 
 

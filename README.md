@@ -10,6 +10,6 @@ Rafael Menezes    - github.com/rmmenezes    - linkedin.com/in/rmmenezes  <br>
 
 
 ## 📋 Material recomendado para estudos sobre Segurança Cibernética <br>
-# 🔧 Repositório será atualizado com frequência, para sugestões ou solicitações entrar em contato nos links acima.
+### 🔧 Repositório será atualizado com frequência, para sugestões ou solicitações entrar em contato nos links acima.
 
 

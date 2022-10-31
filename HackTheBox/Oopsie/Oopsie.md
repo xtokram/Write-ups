@@ -76,7 +76,7 @@ $conn = mysqli_connect('localhost','robert','M3g4C0rpUs3r!','garage');
 ?>
 ```
 
-![Untitled](%5BOK%5D%20-%20Oopsie%2028dcc962f95c4facb242b70d6ce9d6ec/Untitled%206.png)
+![Untitled](pics/Untitled%206.png)
 
 The user Robert is part of the group ***bugtracker*** . Let's try to see if there is any binary within
 that group:
@@ -87,7 +87,7 @@ find / -group bugtracker
 
 We found a file named ***bugtracker*** with SUID enable. This is GREAT!!
 
-![Untitled](%5BOK%5D%20-%20Oopsie%2028dcc962f95c4facb242b70d6ce9d6ec/Untitled%207.png)
+![Untitled](pics/Untitled%207.png)
 
 When we run the file ***bugtracker*** we notice that the cat command is used to display a file in a certain in the report directory. But not this cat command makes use of the environment variable to locate the executable. So our task here is to change the cat environment variable to point to an executable containing a shell.
 

@@ -13,7 +13,7 @@ Nesse desafio havia apenas um arquivo zip para ser baixado, contendo um executá
 Para achar a flag basta utilizar o comando strace que intercepta e imprime todas as chamadas de sistema (syscalls) feitas por um executável. Na Imagem 02 está uma parte da saída do strace e logo no início já é possível ver a flag. 
 
 ![Imagem 02 - Uso do ltrace](pics/2.png)
-<br>**Imagem 02 - ltrace**
+<br>**Imagem 02 - Execução do strace**
 
 ---
 Lucas Tomio Darim

@@ -29,7 +29,7 @@ Até o momento já dispomos de write-ups de algumas máquinas do Hack The Box, a
 
 ## Matheus Almeida
 - [github.com/xtokram](https://github.com/xtokram)
-- [linkedin.com/in/xtokram](https://linkedin.com/in/tokram)
+- [linkedin.com/in/tokram](https://linkedin.com/in/tokram)
 
 ## Rafael Menezes
 - [github.com/rmmenezes](https://github.com/rmmenezes)

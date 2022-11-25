@@ -16,5 +16,6 @@ Para achar a flag basta utilizar o comando strace que intercepta e imprime todas
 <br>**Imagem 02 - Execução do strace**
 
 <br>
+
 ---
 Lucas Tomio Darim

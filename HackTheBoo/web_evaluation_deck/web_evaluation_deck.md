@@ -44,5 +44,6 @@ Logo utilizando a função open para abrir o arquivo com a flag e read para lê-
 Durante o CTF era preciso fazer a mesma coisa mas contra o docker rodando no servidor do HTB, então a flag que retornava era HTB{j4v4_5pr1ng_just_b3c4m3_j4v4_sp00ky!!}.
 
 <br>
+
 ---
 Lucas Tomio Darim

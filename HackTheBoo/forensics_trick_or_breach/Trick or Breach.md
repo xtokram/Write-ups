@@ -31,6 +31,7 @@ Com o arquivo obtido anteriormente baixado, é possível descompactar para obter
 
 ![Imagem 05 - Obtenção da flag](pics/5.png)
 <br>**Imagem 05 - Obtenção da flag**
+
 <br><br>
 ---
 Lucas Tomio Darim

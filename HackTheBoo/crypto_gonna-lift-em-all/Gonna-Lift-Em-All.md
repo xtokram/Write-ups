@@ -106,7 +106,7 @@ Por fim utilizando a função long_to_bytes() da biblioteca Crypto.Util.number p
 
 ![Imagem 03 - Obtenção da flag](pics/3.png)
 <br>**Imagem 03 - Obtenção da flag** 
-<br><br><br>
 
+<br><br><br>
 ---
 Lucas Tomio Darim

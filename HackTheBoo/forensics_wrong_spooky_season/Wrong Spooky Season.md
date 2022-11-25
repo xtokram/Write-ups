@@ -21,6 +21,7 @@ Com o cyberchef é possível inverter e decodificar de Base64 para encontrar a f
 
 ![Imagem 03 - Obtenção da flag](pics/3.png)
 <br>**Imagem 03 - Obtenção da flag**
+
 <br><br>
 ---
 Lucas Tomio Darim

@@ -24,5 +24,6 @@ Então ao executar o programa novamente mas dessa vez inserindo a senha correta 
 
 Então durante o CTF, era necessário se conectar com o servidor do Hack the Box na máquina que foi gerada através do netcat. Apoś estar conectado, bastava inserir a senha para obter uma shell, então com o cat era possível imprimir a flag que estava no mesmo diretório. 
 
+<br><br>
 ---
 Lucas Tomio Darim

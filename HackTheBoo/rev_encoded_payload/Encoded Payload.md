@@ -15,5 +15,6 @@ Para achar a flag basta utilizar o comando strace que intercepta e imprime todas
 ![Imagem 02 - Uso do ltrace](pics/2.png)
 <br>**Imagem 02 - Execução do strace**
 
+<br>
 ---
 Lucas Tomio Darim

@@ -175,7 +175,8 @@ A execução desse programa pode ser vista na Imagem 03, entretando é impresso 
 <br>**Imagem 03 - Execução do programa que obtém a flag**
 
 Então para conseguir a flag verdadeira durante o CTF bastava trocar a função process pela função connect passando como argumento o ip e porta do docker. Ao após alterar isso e executar o programa a flag é impressa no terminal.
-<br><br><br>
+
+<br><br>
 
 ---
 Lucas Tomio Darim

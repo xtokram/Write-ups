@@ -1,7 +1,5 @@
 # OhSINT
 
-/di
-
 ![WindowsXP (1).jpg](pics/WindowsXP_(1).jpg)
 
 ```bash

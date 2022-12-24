@@ -20,7 +20,7 @@ E antes de começar gostaria de agradecer ao TryHackMe e a todos os envolvidos n
 - [\[Day 6\] It's beginning to look a lot like phishing](#day-6-its-beginning-to-look-a-lot-like-phishing)
 - [\[Day 7\] Maldocs roasting on an open fire](#day-7-maldocs-roasting-on-an-open-fire)
 - [\[Day 8\] Last Christmas I gave you my ETH](#day-8-last-christmas-i-gave-you-my-eth)
-- [\[Day 9\] Dock the halls](#day-8-last-christmas-i-gave-you-my-eth)
+- [\[Day 9\] Dock the halls](#day-9-dock-the-halls)
 - [\[Day 10\] You're a mean one, Mr. Yeti](#day-10-youre-a-mean-one-mr-yeti)
 - [\[Day 11\] Not all gifts are nice](#day-11-not-all-gifts-are-nice)
 - [\[Day 12\] Forensic McBlue to the REVscue!](#day-12-forensic-mcblue-to-the-revscue)

@@ -5,21 +5,18 @@ Até o momento já dispomos de write-ups de algumas máquinas do Hack The Box, a
 
 
 # Conteúdos
-- [Hack the Boo](https://github.com/xtokram/Write-ups/tree/main/HackTheBoo)
-    - [Gonna-Lift-Em-All](https://github.com/xtokram/Write-ups/blob/main/HackTheBoo/crypto_gonna-lift-em-all/Gonna-Lift-Em-All.md)
-    - [Trick or Breach](https://github.com/xtokram/Write-ups/blob/main/HackTheBoo/forensics_trick_or_breach/Trick%20or%20Breach.md)
-    - [Wrong Spooky Season](https://github.com/xtokram/Write-ups/blob/main/HackTheBoo/forensics_wrong_spooky_season/Wrong%20Spooky%20Season.md)
-    - [Entity](https://github.com/xtokram/Write-ups/blob/main/HackTheBoo/pwn_entity/Entity.md)
-    - [Cult Meeting](https://github.com/xtokram/Write-ups/blob/main/HackTheBoo/rev_cult_meeting/Cult%20Meeting.md)
-    - [Encoded Payload](https://github.com/xtokram/Write-ups/blob/main/HackTheBoo/rev_encoded_payload/Encoded%20Payload.md)
+- [Hack the Box](./HackTheBox/)
+    - [Archetype](./HackTheBox/Archetype/)
+    - [Hack the Boo](./HackTheBox/HackTheBoo/)
+    - [Oopsie](./HackTheBox/Oopsie/)
+    - [Router Space](./HackTheBox/RouterSpace/)
+    - [Vaccine](./HackTheBox/Vaccine/)
 
-- [Hack the Box](https://github.com/tomiodarim)
-    - [Archetype](https://github.com/xtokram/Write-ups/blob/main/HackTheBox/Archetype/Archetype.md)
-    - [Oopsie](https://github.com/xtokram/Write-ups/blob/main/HackTheBox/Oopsie/Oopsie.md)
-    - [Router Space](https://github.com/xtokram/Write-ups/blob/main/HackTheBox/RouterSpace/RouterSpace.md)
-    - [Vaccine](https://github.com/xtokram/Write-ups/tree/main/HackTheBox/Vaccine)
+- [TryHackMe](./TryHackMe/)
+    - [Advent of Cyber 2022](./TryHackMe/Advent%20of%20Cyber%202022/)
+    - [OhSINT](./TryHackMe/OhSINT/)
 
-- [Menina de Cybersec](https://github.com/xtokram/Write-ups/tree/main/Menina%20de%20CyberSec)
+- [Menina de Cybersec](./Menina%20de%20CyberSec/)
 
 
 # Criadores

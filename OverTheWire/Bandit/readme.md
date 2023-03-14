@@ -2,7 +2,43 @@
 
 Bandit é um dos wargames do OverTheWire, ele tem a intenção de ensinar o básico de Linux para quem está começando a aprender. São 33 níveis onde é preciso encontrar a senha do SSH do próximo nível, que está escondida na máquina, para avançar.
 
-Este desafio pode ser acessado por meio de SSH no servidor bandit.labs.overthewire.org na porta 2220.
+Este desafio pode ser acessado por meio de SSH no servidor bandit.labs.overthewire.org na porta 2220, o usuário será bandit seguido pelo número do level.
+
+## Índice
+
+- [Level 0 -> Level 1](#level-0)
+- [Level 1 -> Level 2](#level-1)
+- [Level 2 -> Level 3](#level-2)
+- [Level 3 -> Level 4](#level-3)
+- [Level 4 -> Level 5](#level-4)
+- [Level 5 -> Level 6](#level-5)
+- [Level 6 -> Level 7](#level-6)
+- [Level 7 -> Level 8](#level-7)
+- [Level 8 -> Level 9](#level-8)
+- [Level 9 -> Level 10](#level-9)
+- [Level 10 -> Level 11](#level-10)
+- [Level 11 -> Level 12](#level-11)
+- [Level 12 -> Level 13](#level-12)
+- [Level 13 -> Level 14](#level-13)
+- [Level 14 -> Level 15](#level-14)
+- [Level 15 -> Level 16](#level-15)
+- [Level 16 -> Level 17](#level-16)
+- [Level 17 -> Level 18](#level-17)
+- [Level 18 -> Level 19](#level-18)
+- [Level 19 -> Level 20](#level-19)
+- [Level 20 -> Level 21](#level-20)
+- [Level 21 -> Level 22](#level-21)
+- [Level 22 -> Level 23](#level-22)
+- [Level 23 -> Level 24](#level-23)
+- [Level 24 -> Level 25](#level-24)
+- [Level 25 -> Level 26](#level-25)
+- [Level 26 -> Level 27](#level-26)
+- [Level 27 -> Level 28](#level-27)
+- [Level 28 -> Level 29](#level-28)
+- [Level 29 -> Level 30](#level-29)
+- [Level 30 -> Level 31](#level-30)
+- [Level 31 -> Level 32](#level-31)
+- [Level 32 -> Level 33](#level-32)
 
 ### Level 0
 
@@ -172,66 +208,110 @@ Quando o netcat recebeu a conexão, enviei a senha atual e assim recebi a próxi
 
 ### Level 21
 
+O bandit22 possui uma tarefa que está agendada para executar o script "/usr/bin/cronjob_bandit22.sh" a todo minuto. Olhando o script vemos que está copiando a senha para um arquivo no diretório tmp e está dando permissão para todos lerem. **WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff**
 
+![21](pics/21.png)
 
 ### Level 22
 
+Nesse também precisamos olhar um script que está sendo executado com o cron. Esse script copia senha do próprio usuário para um arquivo que o nome é o hash do nome do usuário. Calculando o hash do bandit23 conseguimos printar a senha dele. **QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G**
 
-
+![22](pics/22.png)
 
 ### Level 23
 
+Como os dois anteriores, nesse também há uma tarefa definida no cron. O script desse irá executar e depois deletar todos os scripts que estiverem na pasta "/var/spool/bandit24/foo". Dessa forma, se colocarmos algum script nesse diretório ele será executado como sendo o bandit24, que é quem criou o cronjob.
 
+![23.1](pics/23.1.png)
 
+Para conseguir a senha, eu criei um script que irá ler o conteúdo do "/etc/bandit_pass/bandit24" e escrevê-lo em um arquivo que eu criei no "/tmp/lucas/senha". Dei permissão para que todos os usuários possam executar ou escrever nesses arquivos, logo o bandit24 poderá executar o script que escreverá no arquivo. E por fim copiei o senha.sh para o arquivo que será executado. 
+
+![23.2](pics/23.2.png)
+
+Após alguns segundos a tarefa é executada rodando o script que eu criei. Com um cat podemos ver que a senha está no arquivo. **VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar**
+
+![23.3](pics/23.3.png)
 
 ### Level 24
 
+Nesse nível há um serviço sendo executado na porta 30002 que retornará a senha do próximo caso seja inserido a senha atual e um pin de 4 dígitos. Precisaremos fazer um brute-force para descobrir o pin, já que pode ser qualquer número de 4 dígitos.
 
+Para não precisar testar as 10 mil possibilidades na mão, eu criei um script que faça isso. O loop do for irá criar um arquivo chamado "pins" que cada linha terá a senha atual e uma opção de pin. Depois será realizado a conexão utilizando o netcat e enviado uma linha por vez, e o grep filtrará para que não apareçam as mensagens de que o pin está errado. **p7TaowMYrmu23Ol8hiZh9UvD0O9hpx8d**
 
+![24](pics/24.png)
 
 ### Level 25
 
+Na home do bandit25 há a chave SSH privada do bandit26 mas ao logar é impresso o texto de aviso na tela e a conexão acaba. Isso acontece pois a shell do bandit26 não é o bash, mas um script para printar o texto com o more.
 
+![25.1](pics/25.1.png)
+
+Caso o tamanho do terminal não seja o suficiente o more irá parar de printar o texto, dando tempo para a gente executar alguns comandos. 
+
+![25.1](pics/25.2.png)
+
+Clicando "v" poderemos executar comandos no vim. E com ":set shell=/bin/bash|:shell" conseguiremos uma shell como bandit26. **c7GvcKlw9mC7aUQaPx7nwFstuAIBw1o1**
+
+![25.1](pics/25.3.png)
 
 
 ### Level 26
 
+Agora que temos uma shell interativa como bandit26 podemos prosseguir. Na home há um programa que nos permite executar comandos como bandit27. Com esse programa e com cat podemos ver a senha do bandit27 armazenada. **YnQpBuifNMas1hcUFk70ZmqkhUU2EuaS**
 
-
+![26](pics/26.png)
 
 ### Level 27
 
+Há um repositório de git do usuário bandit27-git que a senha é a mesma que do bandit27. Clonando esse repositório encontramos a senha do próximo armazenada em um arquivo "README". **AVanL161y9rsbcJIsFHuw35rjaOM19nR**
 
-
+![27](pics/27.png)
 
 ### Level 28
 
+Como o anterior, esse também tem um repositório de git, mas a senha não está sendo mostrada.
 
+![28](pics/28.1.png)
 
+Utilizando o comando git log podemos ver o log de todas as alterações que foram realizadas no repositório. Com o git show vemos quais foram as mudanças realizadas em cada commit. No primeiro deles foi retirada a senha e adicionado os X. **tQKvmcwNYcFS6vmPHIUSI3ShmsrQZK8S**
+
+![28.2](pics/28.2.png)
 
 ### Level 29
 
+Novamente um repositório de git. Agora a senha também não está no "README.md". Mas é informado que não tem senha em produção, logo pode haver alguma em uma branch de desenvolvimento. Olhando as branchs encontramos algumas, sendo uma delas chamada "dev", ao alterar para esse encontramos a senha. **xbhV3HpNGlTIdnjUrdAlPzc2L6y9EOnS**
 
+![29](pics/29.png)
 
 
 ### Level 30
 
+Nesse nível o repositório só possui um arquivo "README.md" e não há nenhum outro commit ou branch. Mas há uma tag na qual está a senha. **OoffzGDlzhAlerFJ2cAiz1D41JW1Mhmt**
 
-
+![30](pics/30.png)
 
 ### Level 31
 
+Por fim o último de git, o "README.md" explica que precisamos fazer o push de um arquivo chamado "key.txt" com o contúdo "May I come in?" para o repositório. Como o ".gitignore" contém *.txt nenhum aquivo com essa extensão poderá ser adicionado, mas isso pode ser ignorado se usarmos o parâmetro "-f" no git add.
 
+![31.1](pics/31.1.png)
 
+Depois é só fazer o commit e o push e é retornada a senha. **rmCBvG56y58BXzv98yZGdO7ATVL5dW8y**
+
+![31.2](pics/31.2.png)
 
 ### Level 32
 
+No último desafio somos colocados em uma shell que converte todas as letras para maiúsculas, então não conseguimos utilizar os comandos pois esses são escritos com letras minúsculas. A variável "0", por padrão, armazena o comando para executar a shell. Então utilizando "$0" nenhum dos caracteres será alterado e o interpretador entenderá que queremos executar "sh", assim obtemos uma shell normal. **odHo63fHiFqcWWJG9rLiLDtPm45KzUKy**
+
+![32](pics/32.png)
 
 
+## Conclusão
 
-### Level 33
+Aqui terminamos todos os 33 níveis que existem até o momento. Como pode ser visto todos foram sobre comandos básicos de Linux, visto que é um desafio para quem está iniciando. O OverTheWire possui outros Wargames que pretendo fazer o write-up no futuro.
 
-
+Agradeço a todos que leram. Qualquer dúvida ou sugestão de melhoria é só entrar em contato.
 
 <br>
 
